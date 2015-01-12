@@ -12,6 +12,40 @@ Library for viewing public Linode employee data
 
 ## Usage
 
+First, create a Linodian object
+
+```
+require 'linodians'
+employees = Linodians.new
+```
+
+You now have an array of all publically listed Linodians. The following attributes are provided:
+
+* fullname: Full name as publicized
+* username: Short name as publicized
+* title: Their position
+
+Any social sites are also parsed, if provided, including 'twitter', 'linkedin', and 'github'.
+
+A `.photo` method is also provided that pulls their public photo.
+
+For example, if you want to follow all the Linodians on Twitter, you can quickly grab all available Twitter profiles:
+
+```
+require 'linodians'
+employees = Linodians.new
+twitter_profiles = employees.map { |x| x[:twitter] }.compact
+puts twitter_profiles
+```
+Or you can find all the listed titles and how many people have each title:
+
+```
+require 'linodians'
+employees = Linodians.new
+titles = employees.map(&:title).each_with_object(Hash.new(0)) { |i, o| o[i] += 1 }
+titles.sort_by(&:last).each { |title, count| puts "#{count} -- #{title}" }
+```
+
 ## Installation
 
     gem install linodians
