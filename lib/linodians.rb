@@ -33,7 +33,7 @@ module Linodians
     def parse_social(block)
       block.css('a.employee-link').map do |link|
         # Social site name from CSS class, link target
-        [link[:class].split.last.split('-').last, link['href']]
+        [link[:class].split.last.split('-').last.to_sym, link['href']]
       end.to_h
     end
   end
