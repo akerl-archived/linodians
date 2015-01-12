@@ -9,6 +9,7 @@ module Linodians
 
     def initialize
       @members = Linodians.download_data
+      @members.freeze
       super(@members)
     end
 
