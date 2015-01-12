@@ -16,7 +16,7 @@ module Linodians
 
     def method_missing(method, *args, &block)
       return super unless @raw.key?(method)
-      instance_eval "def #{method}() #{@raw[method]} end"
+      instance_eval "def #{method}() @raw[:'#{method}'] end"
       send(method)
     end
   end
