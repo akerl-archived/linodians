@@ -5,6 +5,7 @@ require 'nokogiri'
 # Module for parsing Linode employee info
 module Linodians
   DATA_URL = 'https://www.linode.com/employees'
+  PHOTO_URL = 'https://www.linode.com/media/images/employees/%s.png'
 
   class << self
     ##

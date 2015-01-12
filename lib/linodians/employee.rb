@@ -1,9 +1,15 @@
+require 'open-uri'
+
 module Linodians
   ##
   # Employee object
   class Employee
     def initialize(params = {})
       @raw = params
+    end
+
+    def photo
+      @photo ||= open(PHOTO_URL % username) { |x| x.read }
     end
 
     def [](value)
