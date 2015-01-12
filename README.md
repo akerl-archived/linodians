@@ -37,6 +37,15 @@ employees = Linodians.new
 twitter_profiles = employees.map { |x| x[:twitter] }.compact
 puts twitter_profiles
 ```
+Say you want to follow any of them you don't already follow? You can combine the above with [sferik's awesome "t" CLI for Twitter](https://github.com/sferik/t):
+
+```
+linodian_accounts = twitter_profiles.map { |x| x.split('/').last }
+currently_following = `t followings`.split
+new_accounts = linodian_accounts.reject { |x| currently_following.include? x }
+new_accounts.each { |x| system "t follow #{x}" }
+```
+
 Or you can find all the listed titles and how many people have each title:
 
 ```
