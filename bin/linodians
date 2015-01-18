@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+
+require 'linodians'
+require 'json'
+require 'optparse'
+
+options = {
+  format: :plain
+}
+opt = OptionParser.new do |opts|
+  opts.banner = 'Usage: linodians [-v] [-j]'
+  opts.on('-j', '--json', 'Output as json') do
+    options[:format] = :json
+  end
+  opts.on_tail('-v', '--version', 'Show version') do
+    puts Linodians::VERSION
+    exit
+  end
+end.parse!
+
+results = Linodians.new
+
+case options[:format]
+when :json
+  puts results.to_json
+when :plain
+  results.each do |user|
+    puts "#{user.fullname} (#{user.username}): #{user.title}"
+    user.social.each { |site| puts "  #{site}: #{user[site]}" }
+  end
+else
+  puts 'How did you get in here?'
+  exit 1
+end

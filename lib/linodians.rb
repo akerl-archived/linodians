@@ -32,13 +32,15 @@ module Linodians
     end
 
     def parse_social(block)
-      block.css('a.employee-link').map do |link|
+      links = block.css('a.employee-link').map do |link|
         # Social site name from CSS class, link target
         [link[:class].split.last.split('-').last.to_sym, link['href']]
       end.to_h
+      links.merge(social: links.keys)
     end
   end
 end
 
+require 'linodians/version'
 require 'linodians/employee'
 require 'linodians/group'

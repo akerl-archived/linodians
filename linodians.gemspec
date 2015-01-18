@@ -1,6 +1,9 @@
+$:.unshift File.expand_path('../lib/', __FILE__)
+require 'linodians/version'
+
 Gem::Specification.new do |s|
   s.name        = 'linodians'
-  s.version     = '0.0.2'
+  s.version     = Linodians::VERSION
   s.date        = Time.now.strftime("%Y-%m-%d")
 
   s.summary     = 'Parse Linode employees'
@@ -12,6 +15,7 @@ Gem::Specification.new do |s|
 
   s.files       = `git ls-files`.split
   s.test_files  = `git ls-files spec/*`.split
+  s.executables = ['linodians']
 
   s.add_dependency 'nokogiri', '~> 1.6.5'
 
