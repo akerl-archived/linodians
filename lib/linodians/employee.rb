@@ -16,7 +16,7 @@ module Linodians
       @raw[value.to_sym] || @raw[value.to_s]
     end
 
-    def respond_to?(method, _)
+    def respond_to?(method, _ = false)
       @raw.key?(method) || super
     end
 
