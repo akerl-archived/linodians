@@ -12,6 +12,21 @@ Library for viewing public Linode employee data
 
 ## Usage
 
+### From the command line
+
+A `linodians` script is provided that will output the current data:
+
+```
+❯ linodians -h
+Usage: linodians [-v] [-j]
+    -j, --json                       Output as json
+    -v, --version                    Show version
+```
+
+Running just `linodians` will print a human-readable list. For consumption by other tools, `linodians -j` will output JSON.
+
+### From Ruby code
+
 First, create a Linodian object
 
 ```
