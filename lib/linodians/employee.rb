@@ -16,9 +16,15 @@ module Linodians
       @raw[value.to_sym] || @raw[value.to_s]
     end
 
+    def to_json(*args, &block)
+      @raw.to_json(*args, &block)
+    end
+
     def respond_to?(method, _ = false)
       @raw.key?(method) || super
     end
+
+    private
 
     def method_missing(method, *args, &block)
       return super unless @raw.key?(method)
