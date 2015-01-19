@@ -13,6 +13,10 @@ module Linodians
       super(@members)
     end
 
+    def lookup(username)
+      find { |x| x.username == username }
+    end
+
     def __setobj__(_)
       @members
     end
