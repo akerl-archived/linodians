@@ -25,6 +25,10 @@ module Linodians
       @raw.key?(method) || super
     end
 
+    def to_h
+      @raw.dup
+    end
+
     private
 
     def method_missing(method, *args, &block)
