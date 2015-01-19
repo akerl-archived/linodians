@@ -8,7 +8,7 @@ module Linodians
     alias_method :__getobj__, :members
 
     def initialize(data = nil)
-      @members = data || Linodians.download_data
+      @members = Linodians.load_data(data)
       @members.freeze
       super(@members)
     end

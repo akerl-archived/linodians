@@ -14,14 +14,17 @@ module Linodians
       self::Group.new(*args)
     end
 
-    def download_data
-      Nokogiri::HTML(open(DATA_URL)).css('.employee-display').map do |block|
-        data = parse_user(block).merge parse_social(block)
-        Employee.new data
-      end
+    def load_data(data = nil)
+      (data || download_data).map { |x| Employee.new x }
     end
 
     private
+
+    def download_data
+      Nokogiri::HTML(open(DATA_URL)).css('.employee-display').map do |block|
+        parse_user(block).merge parse_social(block)
+      end
+    end
 
     def parse_user(block)
       {

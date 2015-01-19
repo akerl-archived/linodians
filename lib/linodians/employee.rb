@@ -1,11 +1,12 @@
 require 'open-uri'
+require 'cymbal'
 
 module Linodians
   ##
   # Employee object
   class Employee
     def initialize(params = {})
-      @raw = params
+      @raw = Cymbal.symbolize params
     end
 
     def photo
@@ -13,7 +14,7 @@ module Linodians
     end
 
     def [](value)
-      @raw[value.to_sym] || @raw[value.to_s]
+      @raw[value.to_sym]
     end
 
     def to_json(*args, &block)
