@@ -37,9 +37,19 @@ module Linodians
     def parse_social(block)
       links = block.css('a.employee-link').map do |link|
         # Social site name from CSS class, link target
-        [link[:class].split.last.split('-').last.to_sym, link['href']]
+        [parse_class(link[:class]), link['href']]
       end.to_h
+      links.each { |k, v| links[k] = parse_handle(k, v) }
       links.merge(social: links.keys)
+    end
+
+    def parse_class(text)
+      text.split.last.split('-').last.to_sym
+    end
+
+    def parse_handle(type, link)
+      return link if type == :linkedin
+      link.split('/').last
     end
   end
 end
