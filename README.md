@@ -70,6 +70,18 @@ titles = employees.map(&:title).each_with_object(Hash.new(0)) { |i, o| o[i] += 1
 titles.sort_by(&:last).each { |title, count| puts "#{count} -- #{title}" }
 ```
 
+#### Loading in existing data
+
+If you already have a hash of data, like one created with `Linodians.new.to_json`, you can import it back in when making a new Linodians object:
+
+```
+require 'linodians'
+require 'json'
+
+data = File.open('data.json') { |fh| JSON.parse fh }
+linodians = Linodians.new(data)
+```
+
 ## Installation
 
     gem install linodians

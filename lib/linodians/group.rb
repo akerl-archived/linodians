@@ -7,8 +7,8 @@ module Linodians
     attr_reader :members
     alias_method :__getobj__, :members
 
-    def initialize
-      @members = Linodians.download_data
+    def initialize(data = nil)
+      @members = data || Linodians.download_data
       @members.freeze
       super(@members)
     end
