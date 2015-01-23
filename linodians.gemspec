@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.executables = ['linodians']
 
   s.add_dependency 'nokogiri', '~> 1.6.5'
-  s.add_dependency 'cymbal', '~> 0.0.2'
+  s.add_dependency 'cymbal', '~> 1.0.0'
 
   s.add_development_dependency 'rubocop', '~> 0.28.0'
   s.add_development_dependency 'rake', '~> 10.4.0'
