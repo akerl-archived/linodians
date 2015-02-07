@@ -6,7 +6,7 @@ module Linodians
   # Employee object
   class Employee
     def initialize(params = {})
-      @raw = Cymbal.symbolize params
+      @data = Cymbal.symbolize params
     end
 
     def photo
@@ -14,26 +14,26 @@ module Linodians
     end
 
     def [](value)
-      @raw[value.to_sym]
+      @data[value.to_sym]
     end
 
     def to_json(*args, &block)
-      @raw.to_json(*args, &block)
+      @data.to_json(*args, &block)
     end
 
     def respond_to?(method, _ = false)
-      @raw.key?(method) || super
+      @data.key?(method) || super
     end
 
     def to_h
-      @raw.dup
+      @data.dup
     end
 
     private
 
     def method_missing(method, *args, &block)
-      return super unless @raw.key?(method)
-      instance_eval "def #{method}() @raw[:'#{method}'] end"
+      return super unless @data.key?(method)
+      instance_eval "def #{method}() @data[:'#{method}'] end"
       send(method)
     end
   end
