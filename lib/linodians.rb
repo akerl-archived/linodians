@@ -38,7 +38,8 @@ module Linodians
       links = block.css('a.employee-link').map do |link|
         # Social site name from CSS class, link target
         [parse_class(link[:class]), link['href']]
-      end.to_h
+      end
+      links = Hash[links]
       links.each { |k, v| links[k] = parse_handle(k, v) }
       links.merge(social: links.keys)
     end
