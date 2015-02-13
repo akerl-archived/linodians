@@ -7,6 +7,7 @@ module Linodians
   class Employee
     def initialize(params = {})
       @data = Cymbal.symbolize params
+      @data.freeze
     end
 
     def photo
