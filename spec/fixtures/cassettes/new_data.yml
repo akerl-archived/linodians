@@ -1,0 +1,721 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.linode.com/employees
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Fri, 13 Feb 2015 04:55:08 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Fri, 13 Feb 2015 05:25:08 GMT
+      Cache-Control:
+      - max-age=1800
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: ASCII-8BIT
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t\n\t\t<title>Employees,
+        Meet the Linodians - Linode</title>\n\t\t<meta name=\"viewport\" content=\"width=device-width,
+        initial-scale=1.0\">\n\t\t<meta name=\"description\" content=\"Meet the Linodian
+        team and faces behind the emails.\">\n\t\t<meta name=\"keywords\" content=\"Linode
+        employees, Linode employee directory, Linode staff\">\n\t\t\n\n\t\t\n\t\t<link
+        href='//fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet'
+        type='text/css'>\n\t\t<link href=\"/media/css/home.css?9\" rel=\"stylesheet\">\n\n\t\t<script
+        src=\"/media/js/jquery.min.js?0\"></script>\n\t\t<script src=\"//cdn.optimizely.com/js/2220190451.js\"></script>\n\n\t\t\n\t\t\n\n\t\t\n\t\t\n\n\t\t<link
+        rel=\"shortcut icon\" href=\"/favicon.ico\">\n\t</head>\n\n\t<body class=\"has-subnav\"
+        >\n\t\t<header>\n\t\t\t<nav id=\"main-nav\" class=\"navbar navbar-default\"
+        role=\"navigation\">\n\t\t\t\t<div class=\"container\">\n\n\t\t\t\t\t<div
+        class=\"navbar-header\">\n\t\t\t\t\t\t<button type=\"button\" class=\"toggle
+        navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-top-collapse\">\n\t\t\t\t\t\t\t<span
+        class=\"sr-only\">Toggle navigation</span>\n\t\t\t\t\t\t\t<span class=\"icon-bar\"></span>\n\t\t\t\t\t\t\t<span
+        class=\"icon-bar\"></span>\n\t\t\t\t\t\t\t<span class=\"icon-bar\"></span>\n\t\t\t\t\t\t</button>\n\t\t\t\t\t\t<a
+        href=\"/\"><img id=\"navbar-logo\" src=\"/media/images/header/linode_logo_white.png\"></a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t\n\t\t\t\t\t\t<div
+        class=\"collapse navbar-collapse navbar-top-collapse\">\n\t\t\t\t\t\t\t<ul
+        class=\"nav navbar-nav navbar-right\">\n\n\t\t\t\t\t\t\t\t<li class=\"\"><a
+        href=\"/\"><span class='nav-home'></span></a></li> <li class=\"\"><a href=\"/linodes\">Features</a></li>
+        <li class=\"\"><a href=\"/pricing\">Pricing</a></li> <li class=\"\"><a href=\"/addons\">Add-ons</a></li>
+        \n\n\t\t\t\t\t\t\t\t<li class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<a href=\"#\"
+        class=\"dropdown-toggle\" data-toggle=\"dropdown\">Resources <span class=\"caret\"></span></a>\n\t\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown-menu dropdown-main-nav dropdown-mega\">\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"dropdown-third\">\n\t\t\t\t\t\t\t\t\t\t\t<ul >\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/docs/getting-started\">Getting Started</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/docs/migrate-to-linode/migrate-from-shared-hosting\">Migrating to
+        Linode</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"/docs/websites/hosting-a-website\">Hosting
+        a Website</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li
+        class=\"big\"><a href=\"/docs\"><i class=\"fa fa-book\"></i> Guides &amp;
+        Tutorials</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"divider visible-xs\"></li>\n\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"dropdown-third middle\">\n\t\t\t\t\t\t\t\t\t\t\t<ul >\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/api\">API</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"/stackscripts\">StackScripts</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/mobile\">Mobile</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"/cli\"
+        target=\"_blank\">CLI</a></li>\n\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/chat\"><i class=\"fa fa-bullhorn gray\"></i> Chat</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://forum.linode.com\"><i class=\"fa fa-comments\"></i> Community
+        Forum</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"divider visible-xs\"></li>\n\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"dropdown-third\">\n\t\t\t\t\t\t\t\t\t\t\t<ul >\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://blog.linode.com\">Blog</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"http://status.linode.com\">System Status</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/speedtest\">Speed Test</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"/about\">About
+        Us</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/contact\"><i class=\"fa fa-user\"></i> Contact Support</a></li>\n\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t\t\t<li
+        role=\"presentation\" class=\"divider-vertical\"><span>|</span></li>\n\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t<li
+        class=\"\"><a href=\"https://manager.linode.com/\">Log in <span class=\"login-caret\"></span></a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"visible-xs\"><a href=\"https://manager.linode.com/session/signup\">Sign
+        up</a></li>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<li class=\"hidden-xs\"><div><a
+        id=\"btn-signup-top\" class=\"btn btn-white btn-sm navbar-btn hidden-xs\"
+        href=\"https://manager.linode.com/session/signup\">Sign up</a></div></li>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\n\n\n\t\t\t\t</div>\n\t\t\t</nav>\n\n\t\t\t\n\t\t\t\n\n\t\t\t\t<nav
+        class=\"navbar white subnav jumbotron\" role=\"navigation\">\n\t\t\t\t\t<div
+        class=\"container\">\n\n\t\t\t\t\t\t<div class=\"subnav-divider\">\n\t\t\t\t\t\t\t<div
+        class=\"navbar-header\">\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t<button type=\"button\"
+        class=\"toggle navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-sub-collapse\">\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"sr-only\">Toggle sub navigation</span>\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"toggle-closed glyphicon glyphicon-chevron-down\"></span>\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"toggle-open glyphicon glyphicon-remove\"></span>\n\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t<h6
+        class=\"navbar-brand\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"/about\">Company</a>\n\t\t\t\t\t\t\t\t\t</h6>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<div
+        class=\"collapse navbar-collapse navbar-sub-collapse\">\n\t\t\t\t\t\t\t\t<ul
+        class=\"nav navbar-nav navbar-right\">\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        \n\t\t\t\t\t\t\t\t\t\t\t\thref=\"/about\">About Us</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        class=\"active\"\n\t\t\t\t\t\t\t\t\t\t\t\thref=\"/employees\">Employees</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        \n\t\t\t\t\t\t\t\t\t\t\t\thref=\"https://blog.linode.com\">Blog</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        \n\t\t\t\t\t\t\t\t\t\t\t\thref=\"/events\">Events</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        \n\t\t\t\t\t\t\t\t\t\t\t\thref=\"/press\">Press</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        \n\t\t\t\t\t\t\t\t\t\t\t\thref=\"/logos\">Logos</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        \n\t\t\t\t\t\t\t\t\t\t\t\thref=\"/careers\">Careers</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        \n\t\t\t\t\t\t\t\t\t\t\t\thref=\"/contact\">Contact</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t</div>\n\t\t\t\t</nav>\n\t\t\t\n\n\t\t</header>\n\n\t\t\n\n<script>\n$(document).ready(
+        function(){\n\t$( '.employee-display' ).hover(\n\t\tfunction() {\n\t\t\tvar
+        imgtag = $( this ).find( 'img' );\n\t\t\timgtag.attr('src', '/media/images/employees/'
+        + imgtag.attr('img-name') + '.png');\n\t\t\t$( this ).find('.employee-link').css({
+        display: 'block' });\n\t\t}, function() {\n\t\t\tvar imgtag = $( this ).find(
+        'img' );\n\t\t\timgtag.attr('src', '/media/images/employees/' + imgtag.attr('img-name')
+        + '_bw.png');\n\t\t\t$( this ).find('.employee-link').hide();\n\t\t}\n\t);\n});\n</script>\n\n\n<section
+        class=\"primary extra-space top\">\n\t<div class=\"container\">\n\t\t<div
+        class=\"row\">\n\t\t\t<div class=\"col-sm-10 col-sm-offset-1\">\n\t\t\t\t<h2
+        class=\"text-center\">Linodians</h2>\n\n\t\t\t\t<p class=\"text-center\">Each
+        team commits to the ideal mission: making Linode the best cloud-host out there.<br>We
+        aim high - and we aim to have a rolling good time along the way.</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>\n\n<section
+        class=\"primary\">\n\t<div class=\"container\">\n\n\t\t<div class=\"row\">\n\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"caker\" src=\"/media/images/employees/caker_bw.png\" alt=\"Christopher
+        S. Aker\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Christopher
+        S. Aker</strong>\n\t\t\t\t\t\t\t<p><small>President and CEO</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div> <div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-twitter\" target=\"_blank\" href=\"https://twitter.com/caker\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/in/caker\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"tasaro\" src=\"/media/images/employees/tasaro_bw.png\" alt=\"Thomas
+        Asaro\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Thomas Asaro</strong>\n\t\t\t\t\t\t\t<p><small>Chief
+        Operations Officer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><a class=\"employee-link employee-twitter\"
+        target=\"_blank\" href=\"https://twitter.com/tomasaro\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"csmith\" src=\"/media/images/employees/csmith_bw.png\" alt=\"Casey
+        Smith\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Casey Smith</strong>\n\t\t\t\t\t\t\t<p><small>Vice
+        President</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div> <div class=\"employee-link\"></div><div class=\"employee-link\"></div><a
+        class=\"employee-link employee-twitter\" target=\"_blank\" href=\"https://twitter.com/smithcaseys\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/in/caseysmith\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"sclemens\" src=\"/media/images/employees/sclemens_bw.png\" alt=\"Stephen
+        Clemens\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Stephen Clemens</strong>\n\t\t\t\t\t\t\t<p><small>Vice
+        President</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div> <div class=\"employee-link\"></div><div class=\"employee-link\"></div><a
+        class=\"employee-link employee-twitter\" target=\"_blank\" href=\"https://twitter.com/steveclemens2\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/in/stephenclemens\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"restelow\" src=\"/media/images/employees/restelow_bw.png\" alt=\"Randy
+        Estelow\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Randy Estelow</strong>\n\t\t\t\t\t\t\t<p><small>Hardware
+        Operations Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div> <div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-twitter\" target=\"_blank\" href=\"https://twitter.com/rdestelow\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/pub/randy-estelow/2b/416/850\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"rmyers\" src=\"/media/images/employees/rmyers_bw.png\" alt=\"Richard
+        Myers\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Richard Myers</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Manager</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><a class=\"employee-link employee-github\" target=\"_blank\"
+        href=\"https://github.com/movesmyers\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"vpalochko\" src=\"/media/images/employees/vpalochko_bw.png\" alt=\"Vincent
+        Palochko\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Vincent Palochko</strong>\n\t\t\t\t\t\t\t<p><small>Director
+        of Human Resources</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><a class=\"employee-link employee-linkedin\"
+        target=\"_blank\" href=\"https://www.linkedin.com/pub/vincent-palochko/2a/58/986\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"rweiss\" src=\"/media/images/employees/rweiss_bw.png\" alt=\"Robert
+        Weiss\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Robert Weiss</strong>\n\t\t\t\t\t\t\t<p><small>Graphic
+        Designer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"afornuto\" src=\"/media/images/employees/afornuto_bw.png\" alt=\"Alex
+        Fornuto\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Alex Fornuto</strong>\n\t\t\t\t\t\t\t<p><small>Technical
+        Writer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-twitter\" target=\"_blank\" href=\"https://twitter.com/AlexFornuto\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/profile/view?id=66508728\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/alexfornuto\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"mkorsak\" src=\"/media/images/employees/mkorsak_bw.png\" alt=\"Mark
+        Korsak\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Mark Korsak</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div> <div class=\"employee-link\"></div><div class=\"employee-link\"></div><a
+        class=\"employee-link employee-twitter\" target=\"_blank\" href=\"https://twitter.com/ct_chibo\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"http://www.linkedin.com/in/korsakm\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"rohara\" src=\"/media/images/employees/rohara_bw.png\" alt=\"Ryan
+        O'Hara\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Ryan O'Hara</strong>\n\t\t\t\t\t\t\t<p><small>Solutions
+        Consultant</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-twitter\" target=\"_blank\" href=\"https://twitter.com/sirrohara\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/pub/ryan-w-o-hara/4b/ab9/824\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/ryanwohara\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"wblew\" src=\"/media/images/employees/wblew_bw.png\" alt=\"William
+        Blew III\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>William Blew
+        III</strong>\n\t\t\t\t\t\t\t<p><small>Project Manager</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><a class=\"employee-link employee-twitter\"
+        target=\"_blank\" href=\"https://twitter.com/willblew\"></a><a class=\"employee-link
+        employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/pub/william-blew-iii/3a/250/ab8\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/illblew\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\t\t\t\t<div class=\"clearfix
+        visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4 col-md-3
+        col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div class=\"employee-display\">\n\t\t\t\t\t\t<span
+        class=\"emp-left\">\n\t\t\t\t\t\t\t<img img-name=\"jhowson\" src=\"/media/images/employees/jhowson_bw.png\"
+        alt=\"Jill Howson\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Jill
+        Howson</strong>\n\t\t\t\t\t\t\t<p><small>Project Manager</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jstitt\" src=\"/media/images/employees/jstitt_bw.png\" alt=\"Jack
+        Stitt\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Jack Stitt</strong>\n\t\t\t\t\t\t\t<p><small>Senior
+        Customer Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"dmessina\" src=\"/media/images/employees/dmessina_bw.png\" alt=\"David
+        Messina\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>David Messina</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Manager</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div> <div class=\"employee-link\"></div><div class=\"employee-link\"></div><a
+        class=\"employee-link employee-twitter\" target=\"_blank\" href=\"https://twitter.com/davemessina79\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/pub/david-messina/2/670/a6b\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"mmustac\" src=\"/media/images/employees/mmustac_bw.png\" alt=\"Matthew
+        Mustac\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Matthew Mustac</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jottinger\" src=\"/media/images/employees/jottinger_bw.png\" alt=\"James
+        Ottinger\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>James Ottinger</strong>\n\t\t\t\t\t\t\t<p><small>Developer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div> <div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-linkedin\" target=\"_blank\" href=\"http://www.linkedin.com/in/jamesottinger\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/jamesottinger\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jstewart\" src=\"/media/images/employees/jstewart_bw.png\" alt=\"James
+        Stewart\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>James Stewart</strong>\n\t\t\t\t\t\t\t<p><small>Technical
+        Writer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-twitter\" target=\"_blank\" href=\"https://twitter.com/TheTechStewart\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/profile/view?id=14055952\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/thetechstewart\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"soh\" src=\"/media/images/employees/soh_bw.png\" alt=\"Sokhumpheak
+        Thong\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Sokhumpheak Thong</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"rfeliciano\" src=\"/media/images/employees/rfeliciano_bw.png\"
+        alt=\"Ricardo Feliciano\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Ricardo
+        Feliciano</strong>\n\t\t\t\t\t\t\t<p><small>Developer Evangelist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><a class=\"employee-link employee-twitter\"
+        target=\"_blank\" href=\"https://twitter.com/FelicianoTech\"></a><a class=\"employee-link
+        employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/in/ricardofeliciano\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/FelicianoTech\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"mrosabal\" src=\"/media/images/employees/mrosabal_bw.png\" alt=\"Michael
+        Rosabal\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Michael Rosabal</strong>\n\t\t\t\t\t\t\t<p><small>Senior
+        Customer Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div> <div class=\"employee-link\"></div><div class=\"employee-link\"></div><a
+        class=\"employee-link employee-twitter\" target=\"_blank\" href=\"https://twitter.com/MikeyYeahYeah\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"droesch\" src=\"/media/images/employees/droesch_bw.png\" alt=\"Dave
+        Roesch\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Dave Roesch</strong>\n\t\t\t\t\t\t\t<p><small>Director
+        of Marketing</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><a class=\"employee-link employee-linkedin\"
+        target=\"_blank\" href=\"https://www.linkedin.com/pub/david-roesch/26/501/359\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"lbrown\" src=\"/media/images/employees/lbrown_bw.png\" alt=\"Lisa
+        Brown\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Lisa Brown</strong>\n\t\t\t\t\t\t\t<p><small>Executive
+        Assistant</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"marques\" src=\"/media/images/employees/marques_bw.png\" alt=\"Marques
+        Johansson\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Marques Johansson</strong>\n\t\t\t\t\t\t\t<p><small>Developer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><a class=\"employee-link employee-twitter\"
+        target=\"_blank\" href=\"https://twitter.com/displague\"></a><a class=\"employee-link
+        employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/in/marquesjohansson\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/displague\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\t\t\t\t<div class=\"clearfix
+        visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4 col-md-3
+        col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div class=\"employee-display\">\n\t\t\t\t\t\t<span
+        class=\"emp-left\">\n\t\t\t\t\t\t\t<img img-name=\"zbuhman\" src=\"/media/images/employees/zbuhman_bw.png\"
+        alt=\"Zachary Buhman\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Zachary
+        Buhman</strong>\n\t\t\t\t\t\t\t<p><small>Solutions Consultant</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div> <div class=\"employee-link\"></div><div class=\"employee-link\"></div><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/buhman\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jfrederickson\" src=\"/media/images/employees/jfrederickson_bw.png\"
+        alt=\"Jonathan Frederickson\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Jonathan
+        Frederickson</strong>\n\t\t\t\t\t\t\t<p><small>Customer Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"sheuer\" src=\"/media/images/employees/sheuer_bw.png\" alt=\"Sean
+        Heuer\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Sean Heuer</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"rarlan\" src=\"/media/images/employees/rarlan_bw.png\" alt=\"Ryan
+        Arlan\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Ryan Arlan</strong>\n\t\t\t\t\t\t\t<p><small>Senior
+        Customer Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div> <div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-twitter\" target=\"_blank\" href=\"https://twitter.com/RyanArlan0622\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/rarlan\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"kcraig\" src=\"/media/images/employees/kcraig_bw.png\" alt=\"Keith
+        Craig\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Keith Craig</strong>\n\t\t\t\t\t\t\t<p><small>Public
+        Relations Manager</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div> <div class=\"employee-link\"></div><div class=\"employee-link\"></div><a
+        class=\"employee-link employee-twitter\" target=\"_blank\" href=\"https://twitter.com/keithalancraig\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/in/keithalancraig\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"smayersky\" src=\"/media/images/employees/smayersky_bw.png\" alt=\"Stormy
+        Mayersky\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Stormy Mayersky</strong>\n\t\t\t\t\t\t\t<p><small>Digital
+        Marketing Manager</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div> <div class=\"employee-link\"></div><div class=\"employee-link\"></div><a
+        class=\"employee-link employee-twitter\" target=\"_blank\" href=\"https://twitter.com/5tormy\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/in/stormymayersky\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"drussell\" src=\"/media/images/employees/drussell_bw.png\" alt=\"Dave
+        Russell\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Dave Russell</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-twitter\" target=\"_blank\" href=\"https://twitter.com/daverusselljr\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/in/daverusselljr\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/drussell393\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"aforster\" src=\"/media/images/employees/aforster_bw.png\" alt=\"Alex
+        Forster\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Alex Forster</strong>\n\t\t\t\t\t\t\t<p><small>Network
+        Engineer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div> <div class=\"employee-link\"></div><div class=\"employee-link\"></div><a
+        class=\"employee-link employee-twitter\" target=\"_blank\" href=\"https://twitter.com/Alex_Forster\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/AlexForster\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jleal\" src=\"/media/images/employees/jleal_bw.png\" alt=\"Jonathan
+        Leal\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Jonathan Leal</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"llazinskiy\" src=\"/media/images/employees/llazinskiy_bw.png\"
+        alt=\"Lev Lazinskiy\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Lev
+        Lazinskiy</strong>\n\t\t\t\t\t\t\t<p><small>Operations</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><a class=\"employee-link employee-twitter\"
+        target=\"_blank\" href=\"https://twitter.com/levlaz\"></a><a class=\"employee-link
+        employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/pub/lev-lazinskiy/70/31/675\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/levlaz\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jbower\" src=\"/media/images/employees/jbower_bw.png\" alt=\"Joseph
+        Bower\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Joseph Bower</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jdooley\" src=\"/media/images/employees/jdooley_bw.png\" alt=\"Joseph
+        Dooley\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Joseph Dooley</strong>\n\t\t\t\t\t\t\t<p><small>Technical
+        Writer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\t\t\t\t<div class=\"clearfix
+        visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4 col-md-3
+        col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div class=\"employee-display\">\n\t\t\t\t\t\t<span
+        class=\"emp-left\">\n\t\t\t\t\t\t\t<img img-name=\"jmusbach\" src=\"/media/images/employees/jmusbach_bw.png\"
+        alt=\"John Musbach\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>John
+        Musbach</strong>\n\t\t\t\t\t\t\t<p><small>Customer Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div> <div class=\"employee-link\"></div><div class=\"employee-link\"></div><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"http://www.linkedin.com/in/johnmusbach\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"scarrasco\" src=\"/media/images/employees/scarrasco_bw.png\" alt=\"Salvador
+        Carrasco\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Salvador Carrasco</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jrosenberg\" src=\"/media/images/employees/jrosenberg_bw.png\"
+        alt=\"Jeffrey Rosenberg\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Jeffrey
+        Rosenberg</strong>\n\t\t\t\t\t\t\t<p><small>Customer Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div> <div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-twitter\" target=\"_blank\" href=\"https://twitter.com/caceyjones\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/profile/view?id=129236268\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"dampf\" src=\"/media/images/employees/dampf_bw.png\" alt=\"Andrew
+        Dampf\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Andrew Dampf</strong>\n\t\t\t\t\t\t\t<p><small>Network
+        Engineer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><a class=\"employee-link employee-linkedin\"
+        target=\"_blank\" href=\"https://www.linkedin.com/profile/view?id=61675947\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jkruger\" src=\"/media/images/employees/jkruger_bw.png\" alt=\"Joel
+        Kruger\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Joel Kruger</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-twitter\" target=\"_blank\" href=\"https://twitter.com/joeltrane\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/pub/joel-kruger/4b/42b/431\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/Joeltrane\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jsager\" src=\"/media/images/employees/jsager_bw.png\" alt=\"Josh
+        Sager\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Josh Sager</strong>\n\t\t\t\t\t\t\t<p><small>Developer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div> <div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/profile/view?id=60395167\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/wjsager\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"htibbs\" src=\"/media/images/employees/htibbs_bw.png\" alt=\"Howard
+        Tibbs\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Howard Tibbs</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"cwilliams\" src=\"/media/images/employees/cwilliams_bw.png\" alt=\"Carl
+        Williams\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Carl Williams</strong>\n\t\t\t\t\t\t\t<p><small>Network
+        Engineer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jsicilia\" src=\"/media/images/employees/jsicilia_bw.png\" alt=\"James
+        Sicilia\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>James Sicilia</strong>\n\t\t\t\t\t\t\t<p><small>Hardware
+        Operations Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"fhong\" src=\"/media/images/employees/fhong_bw.png\" alt=\"Feng
+        Hong\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Feng Hong</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"drodgers\" src=\"/media/images/employees/drodgers_bw.png\" alt=\"David
+        Rodgers\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>David Rodgers</strong>\n\t\t\t\t\t\t\t<p><small>Controller</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"apena\" src=\"/media/images/employees/apena_bw.png\" alt=\"Alejandro
+        Pena\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Alejandro Pena</strong>\n\t\t\t\t\t\t\t<p><small>Hardware
+        Operations Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\t\t\t\t<div class=\"clearfix
+        visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4 col-md-3
+        col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div class=\"employee-display\">\n\t\t\t\t\t\t<span
+        class=\"emp-left\">\n\t\t\t\t\t\t\t<img img-name=\"swyatt\" src=\"/media/images/employees/swyatt_bw.png\"
+        alt=\"Shawn Wyatt\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Shawn
+        Wyatt</strong>\n\t\t\t\t\t\t\t<p><small>Customer Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"mkropinack\" src=\"/media/images/employees/mkropinack_bw.png\"
+        alt=\"Michael Kropinack\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Michael
+        Kropinack</strong>\n\t\t\t\t\t\t\t<p><small>Operations</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"scaltagirone\" src=\"/media/images/employees/scaltagirone_bw.png\"
+        alt=\"Shawn Caltagirone\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Shawn
+        Caltagirone</strong>\n\t\t\t\t\t\t\t<p><small>Hardware Operations Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"jackley\" src=\"/media/images/employees/jackley_bw.png\" alt=\"Jim
+        Ackley\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Jim Ackley</strong>\n\t\t\t\t\t\t\t<p><small>Customer
+        Support Specialist</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><div class=\"employee-link\"></div>
+        <div class=\"employee-link\"></div><div class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-md visible-lg\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"ekrout\" src=\"/media/images/employees/ekrout_bw.png\" alt=\"Elle
+        Krout\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Elle Krout</strong>\n\t\t\t\t\t\t\t<p><small>Technical
+        Writer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span class=\"emp-right\">\n\t\t\t\t\t\t\t<div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div><a class=\"employee-link
+        employee-twitter\" target=\"_blank\" href=\"https://twitter.com/ellejaclyn\"></a><a
+        class=\"employee-link employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/in/ellejaclyn\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/ellekrout\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t\t<div
+        class=\"col-sm-4 col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"wsmith\" src=\"/media/images/employees/wsmith_bw.png\" alt=\"Will
+        Smith\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Will Smith</strong>\n\t\t\t\t\t\t\t<p><small>Developer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><a class=\"employee-link employee-twitter\"
+        target=\"_blank\" href=\"http://twitter.com/dorthu22\"></a><a class=\"employee-link
+        employee-linkedin\" target=\"_blank\" href=\"https://www.linkedin.com/in/dorthu\"></a><a
+        class=\"employee-link employee-github\" target=\"_blank\" href=\"https://github.com/dorthu\"></a>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div
+        class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div
+        class=\"clearfix visible-sm\"></div>\n\t\t\t\n\n\t\t\t<div class=\"col-sm-4
+        col-md-3 col-lg-3\">\n\t\t\t\t<div class=\"employee-pad\">\n\t\t\t\t\t<div
+        class=\"employee-display\">\n\t\t\t\t\t\t<span class=\"emp-left\">\n\t\t\t\t\t\t\t<img
+        img-name=\"ndodson\" src=\"/media/images/employees/ndodson_bw.png\" alt=\"Nick
+        Dodson\" width=\"180\" height=\"180\">\n\t\t\t\t\t\t\t<strong>Nick Dodson</strong>\n\t\t\t\t\t\t\t<p><small>Developer</small></p>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<span
+        class=\"emp-right\">\n\t\t\t\t\t\t\t<div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div><div class=\"employee-link\"></div> <div class=\"employee-link\"></div><div
+        class=\"employee-link\"></div>\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<div class=\"clear\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\n\t\t</div>\n\t</div>\n</section>\n\n<section
+        class=\"neutral extra-space\">\n\t<div class=\"container\">\n\t\t<div class=\"row-content\">\n\t\t\t<div
+        class=\"col-sm-10 col-sm-offset-1\">\n\t\t\t\t<h3>We're hiring!</h3>\n\t\t\t\t<p>Come
+        join us! We've got all the fun of a startup with the stability of a solid
+        business. We're always looking for talented individuals to help set the bar
+        for the cloud hosting industry.</p>\n\t\t\t\t<p>Take a look at our <a href=\"/careers\">Careers</a>
+        page for open positions.</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>\n\n\n\n\n\t\t<footer>\n\t\t\t\n\t\t\t\t<section
+        id=\"pre-footer\">\n\t\t\t\t\t<div class=\"container\">\n\t\t\t\t\t\t<div
+        class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n\t\t\t\t\t\t\t\t<span>Get
+        started in the Linode Cloud today.</span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div
+        class=\"col-sm-5 pad-xs\">\n\t\t\t\t\t\t\t\t<a id=\"btn-signup-bottom\" class=\"btn
+        btn-lg btn-full btn-white\" href=\"https://manager.linode.com/session/signup\">Create
+        an Account</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</section>\n\n\t\t\t\t<section
+        class=\"dark\">\n\t\t\t\t\t<div class=\"container\">\n\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div
+        class=\"footer-col\">\n\t\t\t\t\t\t\t\t<h5><a href=\"/linodes\">Overview</a></h5>\n\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/pricing\">Plans &amp; Pricing</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/linodes\">Features</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/backups\">Backups</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/nodebalancers\">NodeBalancers</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/longview\">Longview</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/managed\">Managed</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/professional-services\">Professional Services</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/stackscripts\">StackScripts</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/mobile\">Mobile</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/cli\">CLI</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/api\">API</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<div
+        class=\"footer-col\">\n\t\t\t\t\t\t\t\t<h5><a href=\"/docs\">Resources</a></h5>\n\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/docs/getting-started\">Getting Started</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/docs/migrate-to-linode/migrate-from-shared-hosting\">Migrating to
+        Linode</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/docs/websites/hosting-a-website\">Hosting
+        a Website</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/docs\">Guides &amp; Tutorials</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/compliance\">Standards &amp; Compliance</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/speedtest\">Speed Test</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"https://forum.linode.com/\">Forum</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/chat\">Chat</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"http://status.linode.com/\">System
+        Status</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</div>\n\n\n\t\t\t\t\t\t\t<div
+        class=\"footer-col\">\n\t\t\t\t\t\t\t\t<h5><a href=\"/about\">Company</a></h5>\n\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about\">About Us</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/employees\">Employees</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://blog.linode.com\">Blog</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/events\">Events</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/press\">Press</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/logos\">Logos</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/careers\">Careers</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/contact\">Contact</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<div
+        class=\"footer-col\">\n\t\t\t\t\t\t\t\t<h5><a href=\"/contact\">Contact Us</a></h5>\n\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"tel:+18554546633\">855-4-LINODE</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"tel:+18554546633\">(855-454-6633)</a></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"mailto:support@linode.com\">Email us</a></li>\n\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t\t<li><a
+        target=\"_blank\" href=\"https://facebook.com/linode\"><i class=\"fa fa-facebook-square\"></i>
+        Facebook</a></li>\n\t\t\t\t\t\t\t\t\t\t\t<li><a target=\"_blank\" href=\"https://twitter.com/linode\"><i
+        class=\"fa fa-twitter-square\"></i> Twitter</a></li>\n\t\t\t\t\t\t\t\t\t\t\t<li><a
+        target=\"_blank\" href=\"https://plus.google.com/+linode/\"><i class=\"fa
+        fa-google-plus-square\"></i> Google+</a></li>\n\t\t\t\t\t\t\t\t\t\t\t<li><a
+        target=\"_blank\" href=\"https://linkedin.com/company/linode\"><i class=\"fa
+        fa-linkedin-square\"></i> Linkedin</a></li>\n\t\t\t\t\t\t\t\t\t\t\t<li><a
+        target=\"_blank\" href=\"https://github.com/linode/\"><i class=\"fa fa-github-square\"></i>
+        Github</a></li>\n\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t</div>\n\t\t\t\t</section>\n\t\t\t\n\n\t\t\t<section
+        class=\"dark-moar\">\n\t\t\t\t<div class=\"container\">\n\t\t\t\t\t<div id=\"footer-copyright\"
+        class=\"row\">\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div class=\"col-sm-3 text-center\">\n\t\t\t\t\t\t\t\t&copy;
+        2015 Linode, LLC\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<div class=\"col-sm-3
+        text-center\">\n\t\t\t\t\t\t\t\t<a href=\"/tos\">Terms of Service</a>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<div
+        class=\"col-sm-3 text-center\">\n\t\t\t\t\t\t\t\t<a href=\"/privacy\">Privacy
+        Policy</a>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<div class=\"col-sm-3 text-center\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/security\">Security</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</section>\n\t\t</footer>\n\n\t\t<script
+        src=\"/media/js/bootstrap.min.js?0\"></script>\n\t\t<script src=\"/media/js/prettify.min.js?0\"></script>\n\t\t<script
+        src=\"/media/js/jquery.syntaxhighlighter.min.js?0\"></script>\n\t\t<script
+        src=\"/media/js/jquery.transit.min.js?0\"></script>\n\n\t\t<script src=\"/media/js/main.js?3\"></script>\n\n\t\t<div
+        class=\"t\">\n\t\t\t<script type=\"text/javascript\">\n\t\t\t\tvar _gaq =
+        _gaq || [];\n\t\t\t\tvar pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';\n\t\t\t\t_gaq.push(['_require',
+        'inpage_linkid', pluginUrl]);\n\t\t\t\t_gaq.push(['_setAccount', 'UA-177150-1']);\n\t\t\t\t_gaq.push(['_setDomainName',
+        'linode.com']);\n\t\t\t\t_gaq.push(['_trackPageview']);\n\n\t\t\t\t(function()
+        {\n\t\t\t\t\tvar ga = document.createElement('script'); ga.type = 'text/javascript';
+        ga.async = true;\n\t\t\t\t\tga.src = ('https:' == document.location.protocol
+        ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n\t\t\t\t\tvar
+        s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+        s);\n\t\t\t\t})();\n\t\t\t</script>\n\n\t\t\t<script type=\"text/javascript\">\n\t\t\t/*
+        <![CDATA[ */\n\t\t\tvar google_conversion_id = 1071926901;\n\t\t\tvar google_custom_params
+        = window.google_tag_params;\n\t\t\tvar google_remarketing_only = true;\n\t\t\t/*
+        ]]> */\n\t\t\t</script>\n\t\t\t<script type=\"text/javascript\" src=\"//www.googleadservices.com/pagead/conversion.js\">;\n\t\t\t</script>\n\t\t\t<noscript>\n\t\t\t<div
+        style=\"display:inline;\">\n\t\t\t<img height=\"1\" width=\"1\" style=\"border-style:none;\"
+        alt=\"\" src=\"//googleads.g.doubleclick.net/pagead/viewthroughconversion/1071926901/?value=0&amp;guid=ON&amp;script=0\"/>\n\t\t\t</div>\n\t\t\t</noscript>\n\n\t\t\t<script
+        type=\"text/javascript\">\n\t\t\t\tadroll_adv_id = \"IL4WBB7BGVAMPP6O6DBOTR\";\n\t\t\t\tadroll_pix_id
+        = \"PYYL6IEEX5AWZGO6IXQDLQ\";\n\t\t\t\t(function () {\n\t\t\t\tvar oldonload
+        = window.onload;\n\t\t\t\twindow.onload = function(){\n\t\t\t\t\t__adroll_loaded=true;\n\t\t\t\t\tvar
+        scr = document.createElement(\"script\");\n\t\t\t\t\tvar host = ((\"https:\"
+        == document.location.protocol) ? \"https://s.adroll.com\" : \"http://a.adroll.com\");\n\t\t\t\t\tscr.setAttribute('async',
+        'true');\n\t\t\t\t\tscr.type = \"text/javascript\";\n\t\t\t\t\tscr.src = host
+        + \"/j/roundtrip.js\";\n\t\t\t\t\t((document.getElementsByTagName('head')
+        || [null])[0] ||\n\t\t\t\t\tdocument.getElementsByTagName('script')[0].parentNode).appendChild(scr);\n\t\t\t\t\tif(oldonload){oldonload()}};\n\t\t\t\t}());\n\t\t\t</script>\n\n\t\t\t<script
+        type=\"text/javascript\">\n\t\t\t\tsetTimeout(function(){var a=document.createElement(\"script\");\n\t\t\t\tvar
+        b=document.getElementsByTagName(\"script\")[0];\n\t\t\t\ta.src=document.location.protocol+\"//dnn506yrbagrg.cloudfront.net/pages/scripts/0024/3657.js?\"+Math.floor(new\n\t\t\t\tDate().getTime()/3600000);\n\t\t\t\ta.async=true;a.type=\"text/javascript\";b.parentNode.insertBefore(a,b)},
+        1);\n\t\t\t</script>\n\n\t\t\t\n\t\t</div>\n\n\t</body>\n</html>\n"
+    http_version: 
+  recorded_at: Fri, 13 Feb 2015 04:55:08 GMT
+recorded_with: VCR 2.9.3
