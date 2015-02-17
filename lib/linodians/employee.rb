@@ -34,7 +34,7 @@ module Linodians
 
     def method_missing(method, *args, &block)
       return super unless @data.key?(method)
-      instance_eval "def #{method}() @data[:'#{method}'] end"
+      define_singleton_method(method) { @data[method] }
       send(method)
     end
   end
