@@ -5,7 +5,7 @@ module Linodians
   # Group of employees
   class Group < Delegator
     attr_reader :members
-    alias_method :__getobj__, :members
+    alias __getobj__ members
 
     def initialize(data = nil)
       @members = Linodians.load_data(data)

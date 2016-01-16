@@ -43,11 +43,11 @@ describe Linodians::Employee do
 
   describe '#respond_to?' do
     it 'truthfully responds for proxied methods' do
-      expect(employee.respond_to? :twitter).to be_truthy
+      expect(employee.respond_to?(:twitter)).to be_truthy
     end
 
     it 'returns false for methods that it cannot handle' do
-      expect(employee.respond_to? :other).to be_falsey
+      expect(employee.respond_to?(:other)).to be_falsey
     end
   end
 

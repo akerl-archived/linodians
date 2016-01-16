@@ -1,11 +1,12 @@
+# frozen_string_literal: true
 require 'open-uri'
 require 'nokogiri'
 
 ##
 # Module for parsing Linode employee info
 module Linodians
-  DATA_URL = 'https://www.linode.com/employees'
-  PHOTO_URL = 'https://www.linode.com/media/images/employees/%s.png'
+  DATA_URL = 'https://www.linode.com/employees'.freeze
+  PHOTO_URL = 'https://www.linode.com/media/images/employees/%s.png'.freeze
 
   class << self
     ##

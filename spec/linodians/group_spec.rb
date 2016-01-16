@@ -13,7 +13,7 @@ describe Linodians::Group do
     end
 
     it 'contains employees' do
-      expect(group.members).to all(be_an_instance_of Linodians::Employee)
+      expect(group.members).to all(be_an_instance_of(Linodians::Employee))
     end
   end
 
@@ -37,7 +37,7 @@ describe Linodians::Group do
   end
 
   it 'correctly responds to respond_to?' do
-    expect(group.respond_to? :size).to be_truthy
-    expect(group.respond_to? :fake).to be_falsey
+    expect(group.respond_to?(:size)).to be_truthy
+    expect(group.respond_to?(:fake)).to be_falsey
   end
 end
