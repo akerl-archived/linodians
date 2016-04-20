@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Linodians::Employee do
   let(:employee) do
-    VCR.use_cassette('new_data') { Linodians::Group.new.lookup('rohara') }
+    VCR.use_cassette('new_data') { Linodians::Group.new.lookup('marques') }
   end
 
   describe '#photo' do
@@ -19,15 +19,15 @@ describe Linodians::Employee do
 
   describe '#[]' do
     it 'accesses the employee info' do
-      expect(employee[:twitter]).to eql 'sirrohara'
+      expect(employee[:twitter]).to eql 'displague'
     end
 
     it 'supports strings as keys' do
-      expect(employee['twitter']).to eql 'sirrohara'
+      expect(employee['twitter']).to eql 'displague'
     end
 
     it 'supports symbols as keys' do
-      expect(employee[:twitter]).to eql 'sirrohara'
+      expect(employee[:twitter]).to eql 'displague'
     end
 
     it 'returns nil if the key does not exist' do
@@ -65,6 +65,6 @@ describe Linodians::Employee do
   end
 
   it 'proxies methods as data hash keys' do
-    expect(employee.twitter).to eql 'sirrohara'
+    expect(employee.twitter).to eql 'displague'
   end
 end

@@ -5,7 +5,7 @@ require 'nokogiri'
 ##
 # Module for parsing Linode employee info
 module Linodians
-  DATA_URL = 'https://www.linode.com/employees'.freeze
+  DATA_URL = 'https://www.linode.com/about'.freeze
   PHOTO_URL = 'https://www.linode.com/media/images/employees/%s.png'.freeze
 
   class << self
@@ -22,7 +22,7 @@ module Linodians
     private
 
     def download_data
-      Nokogiri::HTML(open(DATA_URL)).css('.employee-display').map do |block|
+      Nokogiri::HTML(open(DATA_URL)).css('.container.employee-display').map do |block|
         parse_user(block).merge parse_social(block)
       end
     end
