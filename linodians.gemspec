@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'nokogiri', '~> 1.6.5'
   s.add_dependency 'cymbal', '~> 1.0.0'
 
-  s.add_development_dependency 'rubocop', '~> 0.40.0'
+  s.add_development_dependency 'rubocop', '~> 0.41.1'
   s.add_development_dependency 'rake', '~> 11.2.0'
   s.add_development_dependency 'codecov', '~> 0.1.1'
   s.add_development_dependency 'rspec', '~> 3.4.0'
