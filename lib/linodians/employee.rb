@@ -22,7 +22,7 @@ module Linodians
       @data.to_json(*args, &block)
     end
 
-    def respond_to?(method, _ = false)
+    def respond_to_missing?(method, _ = false)
       @data.key?(method) || super
     end
 
