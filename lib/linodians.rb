@@ -22,13 +22,17 @@ module Linodians
     private
 
     def download_data
-      Nokogiri::HTML(open(DATA_URL)).css('div').select do |block|
-        block.at_xpath('div/div[@class="employee-display"]')
-      end.map do |block|
-        username = block.attr(:id)
-        new_block = block.at_xpath('div/div[@class="employee-display"]')
-        parse_user(username, new_block).merge parse_social(block)
+      raw_data.map do |username, block|
+        parse_user(username, block).merge parse_social(block)
       end
+    end
+
+    def raw_data
+      Nokogiri::HTML(open(DATA_URL)).css('div').map do |block|
+        internal_block = block.at_xpath('div/div[@class="employee-display"]')
+        next unless internal_block
+        [block[:id], internal_block]
+      end.compact
     end
 
     def parse_user(username, block)
