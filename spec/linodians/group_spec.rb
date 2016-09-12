@@ -19,7 +19,7 @@ describe Linodians::Group do
 
   describe '#lookup' do
     it 'looks up employees' do
-      expect(group.lookup('jstitt').username).to eql 'jstitt'
+      expect(group.lookup('sthong').username).to eql 'sthong'
     end
 
     it 'returns nil if no match exists' do
