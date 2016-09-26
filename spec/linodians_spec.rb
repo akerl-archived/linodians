@@ -12,7 +12,9 @@ describe Linodians do
   end
 
   describe '#load_data' do
-    let(:saved_data) { File.open('spec/examples/data') { |fh| JSON.load fh } }
+    let(:saved_data) do
+      File.open('spec/examples/data') { |fh| JSON.parse fh.read }
+    end
     let(:new_data) { VCR.use_cassette('new_data') { Linodians.load_data } }
 
     it 'downloads data from linode.com' do
