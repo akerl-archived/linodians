@@ -3,7 +3,7 @@ linodians
 
 [![Gem Version](https://img.shields.io/gem/v/linodians.svg)](https://rubygems.org/gems/linodians)
 [![Dependency Status](https://img.shields.io/gemnasium/akerl/linodians.svg)](https://gemnasium.com/akerl/linodians)
-[![Build Status](https://img.shields.io/circleci/project/akerl/linodians.svg)](https://circleci.com/gh/akerl/linodians)
+[![Build Status](https://img.shields.io/circleci/project/akerl/linodians/master.svg)](https://circleci.com/gh/akerl/linodians)
 [![Coverage Status](https://img.shields.io/codecov/c/github/akerl/linodians.svg)](https://codecov.io/github/akerl/linodians)
 [![Code Quality](https://img.shields.io/codacy/120497a8b57b47c2b45021c992e7b352.svg)](https://www.codacy.com/app/akerl/linodians)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
