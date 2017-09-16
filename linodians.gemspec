@@ -1,13 +1,14 @@
-$:.unshift File.expand_path('../lib/', __FILE__)
+require 'English'
+$LOAD_PATH.unshift File.expand_path('../lib/', __FILE__)
 require 'linodians/version'
 
 Gem::Specification.new do |s|
   s.name        = 'linodians'
   s.version     = Linodians::VERSION
-  s.date        = Time.now.strftime("%Y-%m-%d")
+  s.date        = Time.now.strftime('%Y-%m-%d')
 
   s.summary     = 'Parse Linode employees'
-  s.description = "Library for viewing public Linode employee data"
+  s.description = 'Library for viewing public Linode employee data'
   s.authors     = ['Les Aker']
   s.email       = 'me@lesaker.org'
   s.homepage    = 'https://github.com/akerl/linodians'

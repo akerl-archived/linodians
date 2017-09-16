@@ -7,7 +7,7 @@ require 'optparse'
 options = {
   format: :plain
 }
-opt = OptionParser.new do |opts|
+OptionParser.new do |opts|
   opts.banner = 'Usage: linodians [-v] [-j]'
   opts.on('-j', '--json', 'Output as json') do
     options[:format] = :json
