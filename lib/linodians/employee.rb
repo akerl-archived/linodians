@@ -11,7 +11,10 @@ module Linodians
     end
 
     def photo
-      @photo ||= open(PHOTO_URL % username, &:read)
+      @photo ||= open( # rubocop:disable Security/Open
+        PHOTO_URL % username,
+        &:read
+      )
     end
 
     def [](value)

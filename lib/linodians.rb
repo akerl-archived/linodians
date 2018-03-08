@@ -29,7 +29,8 @@ module Linodians
     end
 
     def raw_data
-      Nokogiri::HTML(open(DATA_URL)).css('div').map do |block|
+      page = open(DATA_URL) # rubocop:disable Security/Open
+      Nokogiri::HTML(page).css('div').map do |block|
         internal_block = block.at_xpath('div/div[@class="employee-display"]')
         next unless internal_block
         [block[:id], internal_block]
