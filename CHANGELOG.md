@@ -1,3 +1,7 @@
+# 1.1.1 / 2016-09-12
+
+* [ENHANCEMENT] Update nokogiri dependency
+
 # 1.1.0 / 2016-09-12
 
 * [BUGFIX] Updated to use the new format of upstream page CSS
