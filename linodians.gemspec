@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.test_files  = `git ls-files spec/*`.split
   s.executables = ['linodians']
 
-  s.add_dependency 'cymbal', '~> 1.0.0'
+  s.add_dependency 'cymbal', '~> 2.0.0'
   s.add_dependency 'nokogiri', '~> 1.8.0'
 
   s.add_development_dependency 'codecov', '~> 0.1.1'
